@@ -8,6 +8,9 @@ module.exports = defineConfig({
   },
   e2e: {
     setupNodeEvents(on, config) {
-		on('before:browser:launch', (browser, launchOptions) => {launchOptions.preferences.isHeadless = false})
+		// on('before:browser:launch', (browser, launchOptions) => {
+    //   console.log(launchOptions.preferences);
+    //   launchOptions.preferences.browser.isHeadless = false;
+    //   console.log(launchOptions.preferences);})
   }},
 });
